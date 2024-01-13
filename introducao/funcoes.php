@@ -1,5 +1,5 @@
 <?php
-
+// NÃO EXECUTAR O CÓDIGO ANTES DE COMENTAR AS PARTE DESNECESSÁRIAS !!!
 # Variável global
 $total = 0;
 function km2mi($quilometros) {
@@ -8,9 +8,9 @@ function km2mi($quilometros) {
     $quilometros *= 0.6;
     echo "Percorreu $quilometros milhas\n";
 }
-// km2mi(100);
-// km2mi(120);
-// echo $total;
+km2mi(100);
+km2mi(120);
+echo $total;
 
 # Variável estática
 function percorre($quilometros) {
@@ -18,24 +18,24 @@ function percorre($quilometros) {
     $total += $quilometros;
     echo "Percorreu $quilometros quilometros do total de $total\n";
 }
-// percorre(100);
-// percorre(500);
-// percorre(20);
+percorre(100);
+percorre(500);
+percorre(20);
 
 # Passando argumentos (by value)
 function soma($variavel, $valor) {
     return $variavel += $valor;
 }
 $a = 0;
-// echo soma($a, 20);
+echo soma($a, 20);
 
 # Passando argumentos (by reference)
 function sum(&$variavel, $valor = 40) {
     $variavel += $valor;
 }
 $a = 0;
-// sum($a, 20);
-// echo $a;
+sum($a, 20);
+echo $a;
 
 # Sem argumentos
 function Ola() {

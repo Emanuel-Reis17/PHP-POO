@@ -1,6 +1,6 @@
 <?php
 # Tipos de Variáveis 
-
+// NÃO EXECUTAR O CÓDIGO ANTES DE COMENTAR AS PARTE DESNECESSÁRIAS !!!
 // Referência 
 $a = "Nome";
 $$a = "Emanuel";
