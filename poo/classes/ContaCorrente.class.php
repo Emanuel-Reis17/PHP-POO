@@ -1,6 +1,7 @@
 <?php
 class ContaCorrente extends Conta {
     var $Limite;
+    var $TaxaTransferencia;
     
     function __construct($Agencia, $Codigo, $DataDeCriacao, $Titular, $Senha, $Saldo, $Limite) {
         parent::__construct($Agencia, $Codigo, $DataDeCriacao, $Titular, $Senha, $Saldo);
@@ -17,5 +18,15 @@ class ContaCorrente extends Conta {
             return false;
         }
         return true;
+    }
+
+    final function Transferir($Conta, $Valor)
+    {
+        if ($this->Retirar($Valor)) {
+            $Conta->Depositar($Valor);
+        }
+        if ($this->Titular != $Conta->Titular) {
+            $this->Retirar($this->TaxaTransferencia);
+        }
     }
 }

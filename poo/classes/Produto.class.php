@@ -1,9 +1,10 @@
 <?php
 class Produto {
     var $Codigo;
-    var $Preco;
     var $Descricao;
-    var $Quantidae;
+    var $Preco;
+    var $Fornecedor;
+    var $Quantidade;
 
     function ImprimeEtiqueta() {
         echo 'Código:    ' . $this->Codigo . "\n";

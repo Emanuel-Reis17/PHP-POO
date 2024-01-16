@@ -1,5 +1,4 @@
 <?php
-# Usando constructor e destructor
 abstract class Conta {
     var $Agencia;
     var $Codigo;
@@ -25,6 +24,7 @@ abstract class Conta {
         return $this->Saldo;
     }
 
+    // Função construtora
     function __construct($Agencia, $Codigo, $DataDeCriacao, $Titular, $Senha, $Saldo) {
         $this->Agencia = $Agencia;
         $this->Codigo = $Codigo;
@@ -37,6 +37,10 @@ abstract class Conta {
         $this->Cancelada = false;
     }
 
+    // Método abstrato
+    abstract function Transferir($Conta, $Valor);
+    
+    // Função destrutora
     function __destruct() {
         echo "Objeto Conta {$this->Codigo} de {$this->Titular->Nome} finalizada.. \n";
     }
