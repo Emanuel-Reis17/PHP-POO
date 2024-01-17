@@ -5,7 +5,7 @@
 "get_object_vars()"       : Retorna um vetor com os nomes das propriedade e seus valores atuais do código 
 "get_class()"             : Retorna o nome da classe que o objeto pertence
 "get_parent_class()"      : Retorna o nome da classe ancestral (classe-pai)
-"is_subclass_of()"        : Verifica se uma classo ou objeto é derivada de um determinada classe
+"is_subclass_of()"        : Verifica se uma classe ou objeto é derivada de um determinada classe
 "call_user_func()"        : Executa uma função ou um método da classe ou objeto
 "method_exists()"         : Verifica se um método existe no objeto
 */
