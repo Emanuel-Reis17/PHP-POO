@@ -1,6 +1,6 @@
 <?php
-/* Use spl_autoload_resgister() 
-* pois __autoload() está depreciado não possui suporte 
+/* Use spl_autoload_resgister()
+* pois __autoload() está depreciado não possui suporte
 */
 spl_autoload_register(function ($class) {
     include_once('./classes/' . $class . '.class.php');

@@ -30,4 +30,13 @@ final class ContaCorrente extends Conta {
     {
         parent::ObterSaldo();
     }
+
+    function Transferir($Conta, $quantia) 
+    {
+        if ($quantia > 0)
+        {
+            $Conta->Depositar($quantia);
+            $this->Saldo -= $quantia;
+        }
+    }
 }
