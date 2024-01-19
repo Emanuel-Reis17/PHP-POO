@@ -8,7 +8,7 @@ final class ContaCorrente extends Conta {
         $this->Limite = $Limite;
     }
     
-    // // Sacar dinheiro
+    // Sacar dinheiro
     function Sacar($quantia)
     {
         if ($quantia > 0) {
