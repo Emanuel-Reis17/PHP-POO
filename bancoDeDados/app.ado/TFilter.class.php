@@ -16,7 +16,7 @@ class TFilter extends TExpression
      * @param $operator = operador
      * @param $value    = valor a ser comparado
      */
-    function __construct($variable, $operator, $value)
+    public function __construct($variable, $operator, $value)
     {
         // Armazena as proprieadades
         $this->variable = $variable;

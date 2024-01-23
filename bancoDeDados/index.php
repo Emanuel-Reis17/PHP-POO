@@ -1,5 +1,4 @@
 <?php
-// NÃO EXECUTAR O CÓDIGO
 try 
 {
     // Instancia um PDO, conectando MySQL

@@ -20,7 +20,7 @@ class TCriteria extends TExpression
         // Na primeira vez, não precisamos de operador para concatenar
         if (empty($this->expressions))
         {
-            unset($operator);
+            $operator = null;
         }
 
         // Agrega o resultado da expressão à lista de expressões
@@ -34,7 +34,7 @@ class TCriteria extends TExpression
      */
     public function dump()
     {
-        global $result;
+        $result = '';
         // concatena a lista de expressão
         if (is_array($this->expressions))
         {
