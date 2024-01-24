@@ -5,9 +5,9 @@
  */
 class TCriteria extends TExpression 
 {
-    private $expressions; // Armazena a lista de expressões
-    private $operators;  // Armazena a lista de operadores
-    private $properties; // Propriedades do critério
+    private $expressions;  // Armazena a lista de expressões
+    private $operators;   // Armazena a lista de operadores
+    private $properties;  // Propriedades do critério
 
     /**
      * Método add()
