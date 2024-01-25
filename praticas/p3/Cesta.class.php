@@ -14,7 +14,7 @@ class Cesta {
         }
     }
 
-    function CalculaTotal() 
+    function CalculaTotal()
     {
         global $total;
         foreach($this->itens as $item) {

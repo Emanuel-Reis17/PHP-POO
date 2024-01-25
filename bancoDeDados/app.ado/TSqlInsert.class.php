@@ -5,6 +5,7 @@
  */
 final class TSqlInsert extends TSqlInstruction
 {
+    // public $entity;
     /**
      * método setRowData()
      * Atribui valores à determinadas colunas no banco de dados que serão inseridas
@@ -29,7 +30,7 @@ final class TSqlInsert extends TSqlInstruction
         elseif (isset($value))
         {
             // caso seja outro tipo de dado
-            $this->columnValues[$column] = $value;
+            $this->columnValues[$column] = "'$value'";
         }
         else 
         {
