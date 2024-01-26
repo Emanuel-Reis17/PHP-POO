@@ -54,7 +54,7 @@ final class TSqlSelect extends TSqlInstruction
             }
             if ($offset)
             {
-                $this->sql = ' OFFSET ' . $offset;
+                $this->sql .= ' OFFSET ' . $offset;
             }
         }
         return $this->sql;

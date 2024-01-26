@@ -6,6 +6,7 @@ $compra1 = new Produto;
 $compra2 = new Produto;
 $compra3 = new Produto;
 $compra4 = new Produto;
+$compra5 = new Produto;
 
 $compra1->Nome = 'Capa de celular';
 $compra1->Preco = 59.90;
@@ -19,10 +20,14 @@ $compra3->Preco = 79.90;
 $compra4->Nome = 'Luana Gaudêncio';
 $compra4->Preco = 0.10;
 
+$compra5->Nome = 'CTAR 21 Tavor';
+$compra5->Preco = 34678.45;
+
 $cesta = new Cesta();
 $cesta->AdicionaItem($compra1);
 $cesta->AdicionaItem($compra2);
 $cesta->AdicionaItem($compra3);
 $cesta->AdicionaItem($compra4);
+$cesta->AdicionaItem($compra5);
 
 echo $cesta->ExibirItens();

@@ -19,6 +19,6 @@ class Produto {
     function ImprimeEtiqueta()
     {
         echo "Nome  : {$this->Nome} \n";
-        echo "Preco : {$this->Preco} \n";
+        echo "Preco : R\${$this->Preco} \n";
     }
 }
