@@ -1,0 +1,19 @@
+{
+    "name": "emanuel/poo2",
+    "description": "PHP Orientado a Objetos",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emanuel Reis",
+            "email": "emanuelemreis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
