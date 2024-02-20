@@ -4,9 +4,34 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2ad71a3fd473cac777f387b75740b3e8
+class ComposerStaticInite730d3f9b51b91c33ca63b9a09165034
 {
+    public static $files = array (
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Slim\\' => 5,
+        ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
+        ),
+        'H' => 
+        array (
+            'Helpers\\' => 8,
+        ),
+        'F' => 
+        array (
+            'FastRoute\\' => 10,
+        ),
+        'C' => 
+        array (
+            'Config\\' => 7,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -14,9 +39,43 @@ class ComposerStaticInit2ad71a3fd473cac777f387b75740b3e8
     );
 
     public static $prefixDirsPsr4 = array (
+        'Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Helpers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/helpers',
+        ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
+        ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/App',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/src',
+            ),
         ),
     );
 
@@ -27,9 +86,10 @@ class ComposerStaticInit2ad71a3fd473cac777f387b75740b3e8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2ad71a3fd473cac777f387b75740b3e8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2ad71a3fd473cac777f387b75740b3e8::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit2ad71a3fd473cac777f387b75740b3e8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite730d3f9b51b91c33ca63b9a09165034::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite730d3f9b51b91c33ca63b9a09165034::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite730d3f9b51b91c33ca63b9a09165034::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInite730d3f9b51b91c33ca63b9a09165034::$classMap;
 
         }, null, ClassLoader::class);
     }

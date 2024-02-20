@@ -6,5 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\' => array($baseDir . '/app'),
+    'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Helpers\\' => array($baseDir . '/helpers'),
+    'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
+    'Config\\' => array($baseDir . '/config'),
+    'App\\' => array($baseDir . '/App'),
 );

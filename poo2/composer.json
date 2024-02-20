@@ -1,11 +1,13 @@
 {
     "name": "emanuel/poo2",
-    "description": "PHP Orientado a Objetos",
+    "description": "PHP POO",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "App/", 
+            "Config\\": "config/", 
+            "Helpers\\": "helpers/"
         }
     },
     "authors": [
@@ -15,5 +17,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "slim/slim": "3.*"
+    }
 }
